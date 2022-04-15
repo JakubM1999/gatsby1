@@ -35,13 +35,13 @@ const numPages = Math.ceil(data.allMdx.edges.length / postPerPage)
 
 
 // Create single block posts
-// data.allMdx.edges.forEach(edge => {
-//     const slug = edge.node.frontmatter.slug
-//     const id = edge.node.id
-//     actions.createPages({
-//         path: slug,
-//         component: require.resolve("./src/templates/singlePost.js"),
-//         context: {id},
-//     })
-// })
+data.allMdx.edges.forEach(edge => {
+    const slug = edge.node.frontmatter.slug
+    const id = edge.node.id
+    actions.createPage({
+        path: slug,
+        component: require.resolve("./src/templates/singlePost.js"),
+        context: {id},
+    })
+})
 }
