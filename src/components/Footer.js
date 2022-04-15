@@ -4,6 +4,7 @@ import {
   FooterWrapper,
   FooterSocialWrapper,
   FooterSocialIcons,
+  P,
 } from "../elements"
 
 export const Footer = () => {
@@ -47,7 +48,9 @@ export const Footer = () => {
                 <img src={data.youtube.publicURL} alt="Youtube logo"/>
             </a>
         </FooterSocialIcons>
-        <p>© 2022 Jacobs games. All rights reserved.</p>
+        <P size="xSmall" color="dark3">
+          © 2022 Jacobs games. All rights reserved.
+        </P>
       </FooterSocialWrapper>
     </FooterWrapper>
   )

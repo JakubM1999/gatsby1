@@ -6,18 +6,13 @@ export const FooterWrapper = styled.footer`
     padding: 3rem 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-
-    @media ${props => props.theme.breakpoints.tablets} {
-        grid-column: 2 / span 6;
-    }
 `
 
 export const FooterSocialWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 
     & p {
         text-align: center;
